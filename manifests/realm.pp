@@ -18,7 +18,7 @@
 # [*master_kdc*]
 #   Identifies the master KDC(s). Currently, this tag is used in only one case:
 #   If an attempt to get credentials fails because of an invalid password, the
-#   client software will attempt to contact the master KDC, in case the userâ€™s
+#   client software will attempt to contact the master KDC, in case the user’s
 #   password has just been changed, and the updated database has not been
 #   propagated to the slave servers yet.
 #
