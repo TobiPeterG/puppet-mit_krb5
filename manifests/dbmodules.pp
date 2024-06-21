@@ -16,15 +16,15 @@
 #   value should be db2 for the DB2 module and kldap for the LDAP module.
 #
 # [*disable_last_success*]
-#   If set to true, suppresses KDC updates to the â€œLast successful
-#   authenticationâ€� field of principal entries requiring preauthentication.
+#   If set to true, suppresses KDC updates to the “Last successful
+#   authentication” field of principal entries requiring preauthentication.
 #   Setting this flag may improve performance. (Principal entries which do not
-#   require preauthentication never update the â€œLast successful authenticationâ€�
+#   require preauthentication never update the “Last successful authentication”
 #   field.). First introduced in release 1.9.
 #
 # [*disable_lockout*]
-#   If set to true, suppresses KDC updates to the â€œLast failed authenticationâ€�
-#   and â€œFailed password attemptsâ€� fields of principal entries requiring
+#   If set to true, suppresses KDC updates to the “Last failed authentication”
+#   and “Failed password attempts” fields of principal entries requiring
 #   preauthentication. Setting this flag may improve performance, but also
 #   disables account lockout. First introduced in release 1.9.
 #
