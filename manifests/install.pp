@@ -14,7 +14,7 @@
 # @param packages
 #
 class mit_krb5::install (
-  Optional[String] $packages = undef,
+  Optional[Variant[String, Array[String]]] $packages = undef,
 ) {
   if $packages {
     if is_array($packages) {

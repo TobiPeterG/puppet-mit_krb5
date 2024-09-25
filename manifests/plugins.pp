@@ -40,9 +40,9 @@
 # Copyright (c) IN2P3 Computing Centre, IN2P3, CNRS
 #
 define mit_krb5::plugins (
-  Optional[String] $disable     = undef,
-  Optional[String] $enable_only = undef,
-  Optional[String] $module      = undef,
+  Optional[Array[String]] $disable     = undef,
+  Optional[Array[String]] $enable_only = undef,
+  Optional[Array[String]] $module      = undef,
 ) {
   include mit_krb5
 
