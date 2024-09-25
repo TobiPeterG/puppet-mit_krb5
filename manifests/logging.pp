@@ -41,10 +41,10 @@
 # Copyright (c) IN2P3 Computing Centre, IN2P3, CNRS
 #
 class mit_krb5::logging (
-  Optional[String] $default      = undef,
-  Optional[String] $admin_server = undef,
-  Optional[String] $kdc          = undef,
-  Optional[String] $defaults     = undef,
+  Optional[Array[String]] $default      = undef,
+  Optional[Array[String]] $admin_server = undef,
+  Optional[Array[String]] $kdc          = undef,
+  Optional[String] $defaults            = undef,
 ) {
   include mit_krb5
 
