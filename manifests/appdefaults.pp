@@ -25,10 +25,10 @@
 # @param ignore_afs
 #
 define mit_krb5::appdefaults (
-  Optional[String] $debug           = undef,
-  Optional[String] $ticket_lifetime = undef,
-  Optional[String] $renew_lifetime  = undef,
-  Optional[String] $forwardable     = undef,
+  Optional[String] $debug                      = undef,
+  Optional[String] $ticket_lifetime            = undef,
+  Optional[String] $renew_lifetime             = undef,
+  Optional[Mit_krb5::Bool_or_str] $forwardable = undef,
   Optional[String] $krb4_convert    = undef,
   Optional[String] $ignore_afs      = undef,
 ) {
