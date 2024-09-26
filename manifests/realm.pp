@@ -116,15 +116,15 @@
 # Copyright (c) IN2P3 Computing Centre, IN2P3, CNRS
 #
 define mit_krb5::realm (
-  Optional[String] $kdc                 = undef,
-  Optional[String] $master_kdc          = undef,
+  Optional[Array[String]] $kdc        = undef,
+  Optional[Array[String]] $master_kdc = undef,
   Optional[String] $admin_server        = undef,
   Optional[String] $database_module     = undef,
   Optional[String] $default_domain      = undef,
   Optional[String] $v4_instance_convert = undef,
   Optional[String] $v4_realm            = undef,
   Optional[String] $auth_to_local_names = undef,
-  Optional[String] $auth_to_local       = undef,
+  Optional[Array[String]] $auth_to_local       = undef,
   Optional[String] $kpasswd_server      = undef,
   Array $v4_realm_convert               = [],
   Optional[String] $pkinit_anchors      = undef,

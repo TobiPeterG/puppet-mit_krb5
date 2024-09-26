@@ -86,16 +86,16 @@
 #
 define mit_krb5::dbmodules (
   String $realm                                = $title,
-  Optional[String] $database_name              = undef,
-  Optional[String] $db_library                 = undef,
-  Optional[Boolean] $disable_last_success      = undef,
-  Optional[Boolean] $disable_lockout           = undef,
-  Optional[String] $ldap_cert_path             = undef,
-  Optional[String] $ldap_conns_per_server      = undef,
-  Optional[String] $ldap_kadmind_dn            = undef,
-  Optional[String] $ldap_kdc_dn                = undef,
-  Optional[String] $ldap_kerberos_container_dn = undef,
-  Optional[String] $ldap_servers               = undef,
+  Optional[Mit_krb5::Bool_or_str] $database_name        = undef,
+  Optional[Mit_krb5::Bool_or_str] $db_library           = undef,
+  Optional[Mit_krb5::Bool_or_str] $disable_last_success = undef,
+  Optional[Mit_krb5::Bool_or_str] $disable_lockout      = undef,
+  Optional[Array[String]] $ldap_cert_path             = undef,
+  Optional[Array[String]] $ldap_conns_per_server      = undef,
+  Optional[Array[String]] $ldap_kadmind_dn            = undef,
+  Optional[Array[String]] $ldap_kdc_dn                = undef,
+  Optional[Array[String]] $ldap_kerberos_container_dn = undef,
+  Optional[Array[String]] $ldap_servers               = undef,
   Optional[String] $ldap_service_password_file = undef,
 ) {
   include mit_krb5
