@@ -351,6 +351,17 @@ class mit_krb5 (
   create_resources('mit_krb5::realm', $realms)
   create_resources('mit_krb5::dbmodules', $dbmodules)
 
+  file { $krb5_conf_d_path:
+    ensure  => directory,
+    owner   => $krb5_conf_owner,
+    group   => $krb5_conf_group,
+    mode    => '0755',
+    recurse => $krb5_conf_d_purge,
+    purge   => $krb5_conf_d_purge,
+    force   => $krb5_conf_d_purge,
+  }
+
+  anchor { 'mit_krb5::end': }
   # END Resource creation }
 
   # SECTION: Resource ordering {
